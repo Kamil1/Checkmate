@@ -8,24 +8,19 @@
 
 import Foundation
 
-class CMChecklist: Hashable {
+class CMChecklist: CMMetadata {
+    var type: CMMetadataType = .list
+    
     var name: String
     var items: [CMItem]
     var directory: CMDirectory
-    var tags: Set<CMTag>
-    
-    var hashValue: Int {
-        return name.hashValue ^ directory.hashValue &* 16777619
-    }
+    var tags: [CMTag]
     
     init(name: String, directory: CMDirectory) {
         self.name = name
         self.items = [CMItem]()
         self.directory = directory
-        self.tags = Set<CMTag>()
+        self.tags = [CMTag]()
     }
     
-    static func == (lhs: CMChecklist, rhs: CMChecklist) -> Bool {
-        return lhs.name == rhs.name && lhs.directory == rhs.directory
-    }
 }

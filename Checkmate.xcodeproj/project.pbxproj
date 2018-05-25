@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		567CD18520B6598700CE166C /* CMTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CD18420B6598700CE166C /* CMTagViewController.swift */; };
 		56CEC7B420A6421800CB4A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7B320A6421800CB4A10 /* AppDelegate.swift */; };
 		56CEC7B620A6421800CB4A10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7B520A6421800CB4A10 /* ViewController.swift */; };
 		56CEC7BB20A6421A00CB4A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CEC7BA20A6421A00CB4A10 /* Assets.xcassets */; };
@@ -16,9 +17,17 @@
 		56CEC7CE20A645BB00CB4A10 /* CMBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7CD20A645BB00CB4A10 /* CMBranch.swift */; };
 		56CEC7D020A6483C00CB4A10 /* CMDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7CF20A6483C00CB4A10 /* CMDirectory.swift */; };
 		56CEC7D220A6498400CB4A10 /* CMTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7D120A6498400CB4A10 /* CMTag.swift */; };
+		56CEC7D720AA51E200CB4A10 /* CMDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7D620AA51E200CB4A10 /* CMDirectoryViewController.swift */; };
+		56CEC7D920AA541000CB4A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CEC7D820AA541000CB4A10 /* LaunchScreen.storyboard */; };
+		56CEC7DC20AA560B00CB4A10 /* CMNewListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7DB20AA560B00CB4A10 /* CMNewListInteractor.swift */; };
+		56CEC7E420AA5D3E00CB4A10 /* CMMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7E320AA5D3E00CB4A10 /* CMMetadata.swift */; };
+		56CEC7E620AA5DDA00CB4A10 /* CMMetadataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7E520AA5DDA00CB4A10 /* CMMetadataTableViewCell.swift */; };
+		56CEC7E920AA5E3500CB4A10 /* CMConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7E820AA5E3500CB4A10 /* CMConstants.swift */; };
+		56CEC7EB20B6082900CB4A10 /* CMSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CEC7EA20B6082900CB4A10 /* CMSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		567CD18420B6598700CE166C /* CMTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMTagViewController.swift; sourceTree = "<group>"; };
 		56CEC7B020A6421700CB4A10 /* Checkmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checkmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CEC7B320A6421800CB4A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56CEC7B520A6421800CB4A10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +39,13 @@
 		56CEC7CD20A645BB00CB4A10 /* CMBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMBranch.swift; sourceTree = "<group>"; };
 		56CEC7CF20A6483C00CB4A10 /* CMDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMDirectory.swift; sourceTree = "<group>"; };
 		56CEC7D120A6498400CB4A10 /* CMTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMTag.swift; sourceTree = "<group>"; };
+		56CEC7D620AA51E200CB4A10 /* CMDirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMDirectoryViewController.swift; sourceTree = "<group>"; };
+		56CEC7D820AA541000CB4A10 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56CEC7DB20AA560B00CB4A10 /* CMNewListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMNewListInteractor.swift; sourceTree = "<group>"; };
+		56CEC7E320AA5D3E00CB4A10 /* CMMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMMetadata.swift; sourceTree = "<group>"; };
+		56CEC7E520AA5DDA00CB4A10 /* CMMetadataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMMetadataTableViewCell.swift; sourceTree = "<group>"; };
+		56CEC7E820AA5E3500CB4A10 /* CMConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMConstants.swift; sourceTree = "<group>"; };
+		56CEC7EA20B6082900CB4A10 /* CMSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +78,15 @@
 		56CEC7B220A6421700CB4A10 /* Checkmate */ = {
 			isa = PBXGroup;
 			children = (
+				56CEC7DA20AA55AC00CB4A10 /* ViewInteractor */,
+				56CEC7D320AA517E00CB4A10 /* Views */,
 				56CEC7C520A6427A00CB4A10 /* Objects */,
 				56CEC7B320A6421800CB4A10 /* AppDelegate.swift */,
+				56CEC7D820AA541000CB4A10 /* LaunchScreen.storyboard */,
 				56CEC7B520A6421800CB4A10 /* ViewController.swift */,
 				56CEC7BA20A6421A00CB4A10 /* Assets.xcassets */,
 				56CEC7BF20A6421A00CB4A10 /* Info.plist */,
+				56CEC7E820AA5E3500CB4A10 /* CMConstants.swift */,
 			);
 			path = Checkmate;
 			sourceTree = "<group>";
@@ -77,6 +97,7 @@
 				56CEC7C620A6429800CB4A10 /* CMChecklist.swift */,
 				56CEC7CA20A6450600CB4A10 /* CMItem */,
 				56CEC7CF20A6483C00CB4A10 /* CMDirectory.swift */,
+				56CEC7E320AA5D3E00CB4A10 /* CMMetadata.swift */,
 				56CEC7D120A6498400CB4A10 /* CMTag.swift */,
 			);
 			path = Objects;
@@ -90,6 +111,25 @@
 				56CEC7CD20A645BB00CB4A10 /* CMBranch.swift */,
 			);
 			path = CMItem;
+			sourceTree = "<group>";
+		};
+		56CEC7D320AA517E00CB4A10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56CEC7D620AA51E200CB4A10 /* CMDirectoryViewController.swift */,
+				56CEC7EA20B6082900CB4A10 /* CMSearchViewController.swift */,
+				567CD18420B6598700CE166C /* CMTagViewController.swift */,
+				56CEC7E520AA5DDA00CB4A10 /* CMMetadataTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56CEC7DA20AA55AC00CB4A10 /* ViewInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				56CEC7DB20AA560B00CB4A10 /* CMNewListInteractor.swift */,
+			);
+			path = ViewInteractor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56CEC7BB20A6421A00CB4A10 /* Assets.xcassets in Resources */,
+				56CEC7D920AA541000CB4A10 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,13 +203,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				56CEC7D020A6483C00CB4A10 /* CMDirectory.swift in Sources */,
+				56CEC7DC20AA560B00CB4A10 /* CMNewListInteractor.swift in Sources */,
 				56CEC7CC20A6451A00CB4A10 /* CMTask.swift in Sources */,
 				56CEC7D220A6498400CB4A10 /* CMTag.swift in Sources */,
 				56CEC7C920A642EF00CB4A10 /* CMItem.swift in Sources */,
+				56CEC7E920AA5E3500CB4A10 /* CMConstants.swift in Sources */,
+				56CEC7EB20B6082900CB4A10 /* CMSearchViewController.swift in Sources */,
 				56CEC7B620A6421800CB4A10 /* ViewController.swift in Sources */,
+				567CD18520B6598700CE166C /* CMTagViewController.swift in Sources */,
 				56CEC7CE20A645BB00CB4A10 /* CMBranch.swift in Sources */,
+				56CEC7E420AA5D3E00CB4A10 /* CMMetadata.swift in Sources */,
 				56CEC7B420A6421800CB4A10 /* AppDelegate.swift in Sources */,
 				56CEC7C720A6429800CB4A10 /* CMChecklist.swift in Sources */,
+				56CEC7E620AA5DDA00CB4A10 /* CMMetadataTableViewCell.swift in Sources */,
+				56CEC7D720AA51E200CB4A10 /* CMDirectoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

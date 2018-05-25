@@ -9,7 +9,7 @@
 import Foundation
 
 protocol CMItem {
-    var text: String {get}
-    var notes: String {get}
-    var checklist: CMChecklist {get}
+    var text: String { get }
+    var notes: String { get }
+    var checklist: CMChecklist { get }
 }

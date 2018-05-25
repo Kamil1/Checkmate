@@ -9,22 +9,22 @@
 import Foundation
 import UIKit
 
-class CMTag: Hashable {
+class CMTag: CMMetadata {
     var name: String
+    var type: CMMetadataType
+    
     var color: UIColor
-    var checklists: Set<CMChecklist>
-    
-    var hashValue: Int {
-        return name.hashValue &* 16777619
-    }
-    
+    var checklists: [CMChecklist]
+        
     init(name: String, color: UIColor) {
         self.name = name
+        self.type = .tag
         self.color = color
-        self.checklists = Set<CMChecklist>()
+        self.checklists = [CMChecklist]()
     }
     
-    static func == (lhs: CMTag, rhs: CMTag) -> Bool {
-        return lhs.name == rhs.name && lhs.color == rhs.color
+    func set(checklists: [CMChecklist]) {
+        self.checklists = checklists
     }
+
 }

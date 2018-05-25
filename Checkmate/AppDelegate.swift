@@ -15,10 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let rootDirectory = CMDirectory(name: "Home", parent: nil)
+        
+        // TODO: DELETE ME.
+        let subDirectory = CMDirectory(name: "Subdirectory", parent: rootDirectory)
+        let sampleChecklist = CMChecklist(name: "Checklist", directory: rootDirectory)
+        let rootDirectoryItems: [CMMetadata] = [subDirectory, sampleChecklist]
+        rootDirectory.set(items: rootDirectoryItems)
+        
+        let rootDirectoryVC = CMDirectoryViewController(directory: rootDirectory)
+        let navController = UINavigationController(rootViewController: rootDirectoryVC)
+        navController.navigationBar.prefersLargeTitles = true
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = UIColor.white
+        self.window?.rootViewController = navController
         self.window?.makeKeyAndVisible()
+        
         return true
     }
 
